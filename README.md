@@ -36,7 +36,7 @@ mvn spring-boot:run
  Базовый запрос обращается к data.xlsx, находящемся в корневой директормм проекта\
 Пример запроса:
 ```sh
-http://localhost:8080/api/getMax?filePath=data.xlsx1&n=5
+http://localhost:8080/api/getMax?filePath=data.xlsx&n=5
 ```
 
 **Запрос к swagger**

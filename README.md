@@ -14,12 +14,13 @@
 - Docker (4.15.0 или выше)
 
 ## Установка и запуск
+
 ### 1. Клонирование репозитория
 ```sh
 git clone https://github.com/asdadsdasd/XlsxDataReader
 cd project-name
 ```
-### Обычный запуск
+## Запуск с помощью Maven
 
 ### 2. Сборка проекта
 ```sh
@@ -33,22 +34,23 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-### Контейнеризация в Docker
+## Контейнеризация в Docker
 
-### 2. Сборка проекта
+### 2. Сборка и запуск контейнера
 ```sh
 docker-compose up --build
 ```
 
-## Отправка запросов
-**Запрос к api**\
- Базовый запрос обращается к data.xlsx, находящемся в корневой директормм проекта\
+## Пример использования API
+
+### **Запрос к api**
+ Базовый запрос обращается к data.xlsx, находящемся в папке excels в корневой директормм проекта\
 Пример запроса:
 ```sh
-http://localhost:8080/api/getMax?filePath=data.xlsx&n=5
+http://localhost:8080/api/numbers/max?filePath=excels/data.xlsx&n=5
 ```
 
-**Запрос к swagger**
+### **Запрос к документации swagger**
 ```sh
 http://localhost:8080/swagger-ui/index.html#/
 ```

@@ -9,15 +9,17 @@
 
 - Java (JDK 17 или выше)
 - Apache Maven (4.0.0 или выше)
-- Git (если проект клонируется из репозитория)
+- Git (если проект клонируется из репозитория)\
+или
+- Docker (4.15.0 или выше)
 
 ## Установка и запуск
-
 ### 1. Клонирование репозитория
 ```sh
-git clone https://github.com/your-repo/project-name.git
+git clone https://github.com/asdadsdasd/XlsxDataReader
 cd project-name
 ```
+### Обычный запуск
 
 ### 2. Сборка проекта
 ```sh
@@ -29,6 +31,13 @@ mvn clean install
 #### Запуск через Maven
 ```sh
 mvn spring-boot:run
+```
+
+### Контейнеризация в Docker
+
+### 2. Сборка проекта
+```sh
+docker-compose up --build
 ```
 
 ## Отправка запросов

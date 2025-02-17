@@ -6,6 +6,6 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./data.xlsx:/app/data.xlsx
+      - ./excels:/app/excels
     environment:
       - SPRING_PROFILES_ACTIVE=prod
